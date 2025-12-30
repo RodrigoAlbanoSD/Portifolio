@@ -1,0 +1,165 @@
+/* ===========================
+   SECTION BASE
+=========================== */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111827;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+.home-container {
+  max-width: 1280px; 
+  margin: 0 auto;    
+  padding: 0 1rem;   
+}
+
+@media (min-width: 640px) {
+  .home-container {
+    padding: 0 1.5rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-container {
+    padding: 0 2rem; 
+  }
+}
+
+/* ===========================
+   GRID
+=========================== */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem; 
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+/* ===========================
+   TEXT BLOCK
+=========================== */
+.home-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
+
+/* ===========================
+   TITLES & TEXT
+=========================== */
+.home-title {
+  font-size: 3rem; 
+  font-weight: 700; 
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .home-title {
+    font-size: 3.75rem; 
+  }
+}
+
+.home-highlight {
+  color: rgb(16, 185, 129); 
+}
+
+.home-subtitle {
+  font-size: 1.875rem;
+  color: rgb(209, 213, 219); 
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .home-subtitle {
+    font-size: 2.25rem;
+  }
+}
+
+.home-description {
+  font-size: 1.25rem; 
+  color: rgb(156, 163, 175); 
+  margin-bottom: 2rem;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-btn-primary {
+  background-color: rgb(16, 185, 129);
+  color: white;
+  padding: 1rem 2rem; 
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 0.5rem; 
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.home-btn-primary:hover {
+  background-color: rgb(5, 150, 105);
+}
+
+.home-btn-outline {
+  border: 2px solid rgb(16, 185, 129);
+  color: rgb(16, 185, 129);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.home-btn-outline:hover {
+  background-color: rgb(16, 185, 129);
+  color: white;
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+.home-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home-image-container {
+  position: relative;
+}
+
+.home-image-glow {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(16, 185, 129);
+  border-radius: 9999px; 
+  filter: blur(3rem); 
+  opacity: 0.2;
+}
+
+.home-image {
+  position: relative;
+  width: 20rem;  
+  height: 20rem; 
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 4px solid rgb(16, 185, 129);
+}

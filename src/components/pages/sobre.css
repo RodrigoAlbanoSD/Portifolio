@@ -1,0 +1,145 @@
+/* ======== SECTION WRAPPER ======== */
+
+.sobre-section {
+  padding-top: 5rem;  
+  padding-bottom: 5rem;
+  background-color: #111827; 
+}
+
+/* ======== CONTAINER ======== */
+
+.sobre-container {
+  max-width: 80rem;
+  margin-left: auto; 
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .sobre-container {
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sobre-container {
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+}
+
+/* ======== REVEAL EFFECT ======== */
+
+.sobre-reveal {
+  transition: all 1s;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.sobre-reveal.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ======== TITLES ======== */
+
+.sobre-title {
+  font-size: 2.25rem; 
+  font-weight: 700;   
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.sobre-title-accent {
+  color: #10b981; 
+}
+
+/* ======== GRID ======== */
+
+.sobre-grid {
+  display: grid;
+  gap: 2rem; 
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .sobre-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+.sobre-left {
+  grid-column: span 1; 
+}
+
+.sobre-right {
+  grid-column: span 2; 
+}
+
+/* ======== ICON BOXES ======== */
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  margin-bottom: 2rem;
+}
+
+.icon-container {
+  background-color: #1f2937; 
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #10b981;
+}
+
+.icon-title {
+  font-size: 1.25rem; 
+  font-weight: 500;
+  color: #d1d5db; 
+}
+
+.icon-text {
+  font-size: 1.125rem; 
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ======== PARAGRAPHS ======== */
+
+.sobre-paragraph {
+  font-size: 1.125rem; 
+  color: #d1d5db;       
+  line-height: 1.75rem; 
+  margin-bottom: 1.5rem;
+}
+
+/* ======== BUTTON ======== */
+
+.sobre-button-wrapper {
+  padding-top: 1.5rem; 
+}
+
+.sobre-button {
+  padding: 1rem 2rem; 
+  font-size: 1.125rem;
+  background-color: #059669; 
+  color: #fff;
+  border-radius: 0.375rem; 
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.sobre-button:hover {
+  background-color: #047857; 
+}

@@ -1,0 +1,84 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+/* Quando scrolled = true */
+.navbar-scrolled {
+  background: rgba(17, 24, 39, 0.95); 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4); 
+}
+
+/* ===== NAVBAR INNER CONTAINER ===== */
+.navbar-inner {
+  max-width: 1280px;        
+  margin: 0 auto;           
+  padding: 0 1rem;          
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;            
+}
+
+
+@media (min-width: 640px) {
+  .navbar-inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ===== BRAND TITLE ===== */
+.brand-title {
+  font-size: 1.5rem;        
+  font-weight: 700;         
+  color: rgb(16, 185, 129); 
+}
+
+/* ===== MENU DESKTOP ===== */
+.menu-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) { 
+  .menu-desktop {
+    display: block;
+  }
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+}
+
+/* ===== MENU LINKS ===== */
+.menu-link {
+  font-size: 1.125rem;         
+  font-weight: 500;               
+  color: rgb(209, 213, 219);      
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-link:focus{
+  outline: none;
+}
+
+.menu-link:hover {
+  color: rgb(16, 185, 129);      
+}

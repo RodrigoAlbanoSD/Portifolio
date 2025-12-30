@@ -1,0 +1,172 @@
+/* ====== SECTION BASE ====== */
+#habilidades {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #1f2937;
+}
+
+/* ====== CONTAINER ====== */
+.habilidades-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .habilidades-container {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .habilidades-container {
+    padding: 2rem 2rem;
+  }
+}
+
+/* ====== ANIMAÇÃO PRINCIPAL ====== */
+.habilidades-animated {
+  transition: all 1s ease;
+  transform: translateY(2.5rem);
+  opacity: 0;
+}
+
+.habilidades-animated.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ====== TITULO ====== */
+.habilidades-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.habilidades-title span {
+  color: #10b981;
+}
+
+.habilidades-subtitle {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* ====== GRID PRINCIPAL ====== */
+.habilidades-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .habilidades-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ====== CATEGORY CARD ====== */
+.habilidade-card {
+  background-color: #111827;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease;
+  transform: translateY(2.5rem);
+  opacity: 0;
+}
+
+.habilidade-card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.habilidade-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #10b981;
+}
+
+.habilidade-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.habilidade-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.habilidade-name {
+  font-size: 1.125rem;
+  color: #d1d5db;
+}
+
+.habilidade-level {
+  font-size: 1.125rem;
+  color: #9ca3af;
+}
+
+/* ====== PROGRESS BAR ====== */
+.progress-bar-bg {
+  width: 100%;
+  background-color: #374151;
+  border-radius: 9999px;
+  height: 0.75rem;
+}
+
+.progress-bar-fill {
+  height: 0.75rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  transition: all 1s ease-out;
+  width: 0%;
+}
+
+/* ====== GRID DE TECNOLOGIAS ====== */
+.tech-grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tech-card {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  transform: translateY(2.5rem);
+  opacity: 0;
+}
+
+.tech-card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.tech-card:hover {
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
+  transform: translateY(-4px);
+}
+
+.tech-text {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+}
