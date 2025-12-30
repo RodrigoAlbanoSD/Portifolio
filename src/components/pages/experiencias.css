@@ -22,8 +22,21 @@
 .card-left{
   text-align: right;
   justify-content: center;
+  flex:2;
+  max-width: 25%;
 }
 
+.card-right{
+  flex:2;
+  max-width: 25%;
+}
+
+.spacer-g{
+  flex: 4;
+}
+.spacer-p{
+  flex: 1;
+}
 
 
 /* ======== Buttons ======== */
@@ -82,13 +95,34 @@
 /* ======== MEDIA ======== */
 
 @media (max-width: 768px) {
-  .divisoriaCentral {
-    display: none;
+  .card-left {
+    flex: 999;
+    max-width: 90%;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
-  .card {
+  .card-right {
     flex: 99999;
+    max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
+  .spacer-g{
+  flex: 0;
+}
+.spacer-p{
+  flex: 0;
+}
+
+  .divisoriaCentral {
+  left: 5%;
+}
+
+.losangulo {
+  left: 5%;
+}
 }
 
 

@@ -5,8 +5,7 @@ const styles = {
         borderRadius: "0.5rem",
         padding: "1.5rem",
         marginTop: "5%",
-        flex: "2",
-        maxWidth: "25%",
+        
 
     },
     posiçãoTexto: {
@@ -49,14 +48,14 @@ const styles = {
 function Card(props) {
     //data="" posição="" empresa="" função="" linguagens=[]/
     return <div className={props.class} style={styles.cardContainer}>
-<span style={styles.dataTexto}>{props.data}</span>
+        <span style={styles.dataTexto}>{props.data}</span>
         <div style={styles.companyContainer}>
-            
+
             <h2 style={styles.posiçãoTexto}>{props.posição}</h2>
-<h3 style={styles.empresaTexto}>{props.empresa}</h3>
+            <h3 style={styles.empresaTexto}>{props.empresa}</h3>
 
         </div>
-        
+
         <p style={styles.funçãoTexto}>{props.função}</p>
         <div className={props.class} style={styles.linguagensContainer}>
             {props.linguagens.map((linguagem, lId) => (

@@ -17,29 +17,29 @@ function Experiencias() {
             {/* cards */}
             <div style={{ flexDirection: "row" }}>
                 <div className="card-container">
-                    <div style={{ flex: "4" }}></div>
+                    <div className="spacer-g"></div>
                     <div className="losangulo"></div>
-                    <Card  data="10-2024 - Hoje" posição="Software Developer" empresa="Freelance" função="Desenvolvimento de aplicações mobile e web usando React. Implementando soluções " linguagens={['React', 'Javascript', 'React Native']} />
-                    <div style={{ flex: "1" }}></div>
+                    <Card  class="card-right" data="10-2024 - Hoje" posição="Software Developer" empresa="Freelance" função="Desenvolvimento de aplicações mobile e web usando React. Implementando soluções " linguagens={['React', 'Javascript', 'React Native']} />
+                    <div className="spacer-p"></div>
                 </div>
                 <div className="card-container">
-                    <div style={{ flex: "1" }}></div>
+                    <div className="spacer-p"></div>
                     <Card class="card-left" data="06-2022 - 08-2024" posição="Data engineer Junior" empresa="Blackchair" função="Atuação em suporte de alta importância, implementando páginas e ferramentas internas para integração com empresas parceiras.
                     E desenvolvimento de soluções autônomas para monitoramento preventivo de servidores e aplicações." linguagens={['MySQL', 'SQL', 'Mongo', 'Agile/Scrum', 'Swagger','RabbitMQ']} />
                     <div className="losangulo"></div>
-                    <div style={{ flex: "4" }}></div>
+                    <div className="spacer-g"></div>
                 </div>
                 <div className="card-container">
-                    <div style={{ flex: "4" }}></div>
+                    <div className="spacer-g"></div>
                     <div className="losangulo"></div>
-                    <Card data="04-2022 - 06-2022" posição="Software Developer Intern" empresa="GrowDoc" função="Desenvolvendo e implementando soluções para a página de pagamentos com Google e Apple wallet, usando C# e WebForms. Desenvolvimento de um sistema de irrigação autonomo com Arduíno e C" linguagens={["C#", "WebForms", "UI/UX", 'C', 'Sistemas embarcados']} />
-                    <div style={{ flex: "1" }}></div>
+                    <Card class="card-right" data="04-2022 - 06-2022" posição="Software Developer Intern" empresa="GrowDoc" função="Desenvolvendo e implementando soluções para a página de pagamentos com Google e Apple wallet, usando C# e WebForms. Desenvolvimento de um sistema de irrigação autonomo com Arduíno e C" linguagens={["C#", "WebForms", "UI/UX", 'C', 'Sistemas embarcados']} />
+                    <div className="spacer-p"></div>
                 </div>
                 <div className="card-container">
-                    <div  style={{ flex: "1" }}></div>
+                    <div  className="spacer-p"></div>
                     <Card class="card-left" data="08/2019 - 06/2020" posição="Gerente" empresa="Kipão" função="Monitoramento e implementação de planos de ação estratégicos para aprimorar o relacionamento com clientes, colaboradores e fornecedores. Análise contínua de vendas e indicadores de desempenho,  resultando em um aumento de 15% na margem de lucro da empresa." linguagens={["Gestão", "Resolução de problemas", "Visão estratégica", "Comunicação"]} />
                     <div className="losangulo"></div>
-                    <div style={{ flex: "4" }}></div>
+                    <div className="spacer-g"></div>
                 </div>
             </div>
 
