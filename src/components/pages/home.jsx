@@ -33,7 +33,7 @@ function Home() {
 
                     <div className="home-buttons">
                         <button
-                            onClick={() => scrollToSection("contact")}
+                            onClick={() => scrollToSection("contato")}
                             className="home-btn-primary"
                         >
                             Entre em Contato

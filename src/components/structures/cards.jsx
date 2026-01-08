@@ -57,7 +57,7 @@ function Card(props) {
         </div>
 
         <p style={styles.funçãoTexto}>{props.função}</p>
-        <div className={props.class} style={styles.linguagensContainer}>
+        <div style={styles.linguagensContainer}>
             {props.linguagens.map((linguagem, lId) => (
                 <div key={lId} style={styles.linguagemButton}>{linguagem}</div>
             ))}
